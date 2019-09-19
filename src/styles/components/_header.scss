@@ -2,58 +2,57 @@
   .header-banner {
     width: 100%;
     height: 31rem;
-    background-image: url('https://bit.ly/2OhbMHr');
+    background-image: url("https://bit.ly/2OhbMHr");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
   }
 
-  .header-menu-image > * {
+  // 高度
+  .header-menu-image > *,
+  .header-menu > * {
     height: 11.25rem;
+    @include media-breakpoint-up(md) {
+      height: 16rem;
+    }
+    @include media-breakpoint-up(lg) {
+      height: 19rem;
+    }
+  }
+
+  // 位移
+  .header-menu {
+    margin-top: -11.25rem;
+    @include media-breakpoint-up(md) {
+      margin-top: -16rem;
+    }
+    @include media-breakpoint-up(lg) {
+      margin-top: -19rem;
+    }
+  }
+
+  .header-menu-image > * {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     transition: transform .4s;
-    @include media-breakpoint-up(md) {
-      height: 16rem;
-    }
-    @include media-breakpoint-up(lg) {
-      height: 19rem;
-    }
-
-    &:hover {
-      transform: rotate(30deg);
-    }
 
     &:nth-child(1) {
-      background-image: url('https://bit.ly/2R5tqwD');
+      background-image: url("https://bit.ly/2R5tqwD");
     }
-
     &:nth-child(2) {
-      background-image: url('https://bit.ly/2Dwoxd7');
+      background-image: url("https://bit.ly/2Dwoxd7");
     }
-
     &:nth-child(3) {
-      background-image: url('https://bit.ly/2OUteif');
+      background-image: url("https://bit.ly/2OUteif");
     }
   }
 
   .header-menu > * {
-    height: 11.25rem;
-    margin-top: -11.25rem;
     color: $white;
     background-color: rgba($primary, .8);
     backdrop-filter: blur(5px);
     transition: background-color .4s;
-    @include media-breakpoint-up(md) {
-      height: 16rem;
-      margin-top: -16rem;
-    }
-    @include media-breakpoint-up(lg) {
-      height: 19rem;
-      margin-top: -19rem;
-    }
-
     &:hover {
       background-color: rgba($primary, .7);
     }
@@ -61,7 +60,6 @@
     &:first-child {
       color: $primary;
       background-color: rgba($warning, .8);
-
       &:hover {
         background-color: rgba($warning, .7);
       }
