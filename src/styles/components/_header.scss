@@ -9,7 +9,7 @@
   }
 
   // 高度
-  .header-menu-image > *,
+  .header-menu-img > *,
   .header-menu > * {
     height: 11.25rem;
     @include media-breakpoint-up(md) {
@@ -31,7 +31,7 @@
     }
   }
 
-  .header-menu-image > * {
+  .header-menu-img > * {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
