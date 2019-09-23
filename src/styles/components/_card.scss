@@ -1,0 +1,36 @@
+.card {
+  .card-img {
+    position: relative;
+    height: 19.6875rem;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+  .card-tag {
+    position: absolute;
+    top: 0;
+    left: 1.25rem;
+    padding: .6875rem .375rem;
+    color: $white;
+    writing-mode: vertical-rl;
+    letter-spacing: .3125rem;
+    background-color: $primary;
+  }
+  .card-pin {
+    position: absolute;
+    top: 1rem;
+    right: 1.25rem;
+    cursor: pointer;
+  }
+  .card-title,
+  .card-price {
+    padding: .875rem 0;
+    margin-bottom: 0;
+    font-size: 1.25rem;
+  }
+  .card-btn {
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+}

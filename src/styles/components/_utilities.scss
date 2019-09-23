@@ -1,3 +1,11 @@
 .word-column {
   writing-mode: vertical-rl;
 }
+
+.swiper {
+  overflow: hidden;
+  overflow-x: scroll;
+  @include media-breakpoint-up(lg) {
+    overflow: visible;
+  }
+}
