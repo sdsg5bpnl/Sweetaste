@@ -1,0 +1,27 @@
+.footer {
+  .footer-subscription {
+    .footer-sub-text {
+      padding: .625rem 0;
+      font-size: 1.5rem;
+    }
+
+    // 例外
+    .input-group {
+      height: 3.5rem;
+
+      .input-group-append {
+        width: 4rem;
+      }
+    }
+  }
+  .footer-section {
+    height: 15.625rem;
+    @include media-breakpoint-up(md) {
+      height: 17.5rem;
+    }
+  }
+  .footer-logo {
+    width: 10.6875rem;
+    margin-top: .5rem;
+  }
+}
