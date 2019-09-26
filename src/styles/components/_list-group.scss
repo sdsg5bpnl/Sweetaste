@@ -1,0 +1,33 @@
+.list-group {
+  .list-group-item {
+    padding: 1rem 1.25rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.9375rem;
+    text-align: center;
+    border-color: $light;
+  }
+
+  .list-group-title {
+    color: $light;
+    background-color: $primary;
+  }
+
+  .list-group-item-action {
+    color: $primary;
+    transition: background-color .3s;
+
+    &:hover {
+      background-color: $warning;
+    }
+
+    &.active {
+      background-color: $light;
+      border-color: $light;
+
+      &:hover {
+        background-color: $warning;
+      }
+    }
+  }
+}
