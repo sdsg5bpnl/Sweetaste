@@ -1,13 +1,10 @@
 <!DOCTYPE html>
 <html lang="zh-Hant-TW">
 
-  <head>
-    <%- include('layout/_head.ejs') %>
-    <title>Sweetaste</title>
-  </head>
+  <%- include('layout/_head.ejs', { pageTitle: 'Sweetaste' }) %>
 
   <body>
-    <%- include('layout/_navbar.ejs') %>
+    <%- include('layout/_navbar.ejs', { navLink: '首頁' }) %>
 
     <section class="header container p-0 p-md-10 mb-30 mb-lg-60">
       <div class="header-banner" style="background-image: url('https://bit.ly/2OhbMHr');"></div>

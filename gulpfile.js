@@ -32,7 +32,7 @@ function minifyHTML() {
 }
 
 function pugToHTML() {
-  return src('src/**/*.pug')
+  return src('src/*.pug')
     .pipe(
       pug({
         pretty: true,
@@ -43,14 +43,14 @@ function pugToHTML() {
 }
 
 function pugToMinifyHTML() {
-  return src('src/**/*.pug')
+  return src('src/*.pug')
     .pipe(pug({}))
     .pipe(dest('dist'))
     .pipe(browserSync.stream());
 }
 
 function ejsToHTML() {
-  return src('src/**/*.ejs')
+  return src('src/*.ejs')
     .pipe(ejs({}))
     .pipe(rename({ extname: '.html' }))
     .pipe(dest('dist'))
@@ -58,7 +58,7 @@ function ejsToHTML() {
 }
 
 function ejsToMinifyHTML() {
-  return src('src/**/*.ejs')
+  return src('src/*.ejs')
     .pipe(ejs({}))
     .pipe(rename({ extname: '.html' }))
     .pipe(
