@@ -2,45 +2,12 @@
 <html lang="zh-Hant-TW">
 
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <%- include('layout/_head.ejs') %>
     <title>Sweetaste</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="styles/all.css">
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top py-20 pt-lg-25 pb-lg-15">
-      <div class="container">
-        <a class="navbar-brand mr-0" href="#">
-          <img src="/static/logo-all-dark.svg" height="40" alt="Sweetaste" class="d-none d-md-block">
-          <img src="/static/logotype-sm-dark.svg" height="18" alt="Sweetaste" class="d-block d-md-none">
-        </a>
-        <button class="navbar-toggler order-first border-0" type="button" data-toggle="collapse"
-          data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-          aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <a href="#" class="nav-item nav-link order-md-1">
-          <i class="material-icons">shopping_cart</i>
-        </a>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active text-center">
-              <a class="nav-link" href="index.html">首頁 <span class="sr-only">(目前))</span></a>
-            </li>
-            <li class="nav-item text-center">
-              <a class="nav-link" href="product.html">甜點</a>
-            </li>
-            <li class="nav-item text-center">
-              <a class="nav-link" href="#">登入</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+    <%- include('layout/_navbar.ejs') %>
 
     <section class="header container p-0 p-md-10 mb-30 mb-lg-60">
       <div class="header-banner" style="background-image: url('https://bit.ly/2OhbMHr');"></div>
@@ -214,64 +181,9 @@
       </div>
     </section>
 
-    <footer class="footer">
-      <div class="footer-subscription container-fluid bg-primary">
-        <div class="container">
-          <div class="row justify-content-center bg-primary py-30">
-            <div class="col-md-10">
-              <div class="row">
-                <div class="col-12 col-md-6 d-flex justify-content-center justify-content-md-start align-items-center mb-30 mb-md-0">
-                  <img src="static/logo-light.svg" height="40" alt="Sweetaste" class="mr-20">
-                  <div class="footer-sub-text text-light">訂閱你我的甜蜜郵件</div>
-                </div>
-                <div class="col-12 col-md-6 px-20 px-md-10">
-                  <div class="input-group input-group-lg">
-                    <div class="input-group-prepend">
-                      <i class="input-group-text px-20 bg-light border-0 material-icons">email</i>
-                    </div>
-                    <input type="email" name="email" id="email" class="form-control from-control-lg bg-light border-0 h-100">
-                    <div class="input-group-append">
-                      <a href="#" class="btn btn-warning d-flex justify-content-center align-items-center w-100">
-                        <i class="material-icons">arrow_forward</i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="container-fluid bg-light py-30 px-20 px-md-0">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-md-10">
-              <div class="footer-section row text-primary">
-                <div class="col-md-6 d-flex flex-column justify-content-between">
-                  <img src="static/logotype-lg-dark.svg" alt="Sweetaste" class="footer-logo">
-                  <div class="mt-10 mt-md-0">
-                      07-1234-5678<br>
-                      sweetaste@email.com<br>
-                      800 高雄市新興區幸福路 520 號<br>
-                      <div class="mt-30">
-                        <img src="static/ic-line@.svg" alt="LINE" width="32">
-                        <img src="static/ic-facebook.svg" alt="Facebook" width="32">
-                      </div>
-                  </div>
-                </div>
-                <div class="col-md-6 d-flex flex-column justify-content-end justify-content-md-between align-items-md-end">
-                  <img src="static/sm-今天是個吃甜點的好日子.svg" alt="今天是個吃甜點的好日子" class="d-none d-md-block" width="60">
-                  <p class="mb-0">© 2018 Sweetaste* All Rights Reserved</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-  </body>
+    <%- include('layout/_footer.ejs') %>
 
-  <script src="scripts/jquery.slim.min.js"></script>
-  <script src="scripts/bootstrap.bundle.min.js"></script>
+    <%- include('layout/_scripts.ejs') %>
+  </body>
 
 </html>
