@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+  <%- include('layout/_head.ejs', { pageTitle: '運送｜Sweetaste' }) %>
+
+  <body>
+    <%- include('layout/_navbar.ejs', { navLink: '運送' }) %>
+
+    <section class="checkout mt-0 mt-md-45 mb-md-60">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-10 px-0 px-md-10">
+            <div class="row">
+              <div class="col-md-7">
+                <div class="row no-gutters align-items-baseline text-light bg-primary pt-30 px-40">
+                  <div class="col">
+                    <h2 class="mb-0">運送</h2>
+                  </div>
+                  <div class="col">
+                    <div class="checkout-progress">
+                      <div class="checkout-progress-item active"></div>
+                      <div class="checkout-progress-item"></div>
+                      <div class="checkout-progress-item"></div>
+                    </div>
+                  </div>
+                </div>
+                <form class="text-light bg-primary py-30 px-40">
+                  <div class="form-row">
+                    <div class="form-group col-6">
+                      <label for="last-name" class="h5">姓氏</label>
+                      <input type="text" class="form-control bg-light" id="last-name" placeholder="王">
+                    </div>
+                    <div class="form-group col-6">
+                      <label for="first-name" class="h5">名字</label>
+                      <input type="text" class="form-control bg-light" id="first-name" placeholder="小名">
+                    </div>
+                    <div class="form-group col-12">
+                      <label for="phone" class="h5">電話</label>
+                      <input type="tel" class="form-control bg-light" id="phone" placeholder="0912-345-678">
+                    </div>
+                    <div class="form-group col-12 mb-0">
+                      <label for="address" class="h5">地址</label>
+                      <div class="form-row mb-8">
+                        <div class="col-6">
+                          <select class="form-control bg-light" id="city">
+                            <option selected>高雄市</option>
+                          </select>
+                        </div>
+                        <div class="col-6">
+                          <select class="form-control bg-light" id="county">
+                            <option selected>新興區</option>
+                          </select>
+                        </div>
+                      </div>
+                      <input type="text" class="form-control bg-light" id="address" placeholder="幸福路 520 號">
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="col-md-5">
+                <div class="text-secondary bg-light">123</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <%- include('layout/_footer.ejs') %>
+
+    <%- include('layout/_scripts.ejs') %>
+  </body>
+
+</html>
