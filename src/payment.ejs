@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="zh-Hant-TW">
 
-  <%- include('layout/_head.ejs', { pageTitle: '運送｜Sweetaste' }) %>
+  <%- include('layout/_head.ejs', { pageTitle: '付款｜Sweetaste' }) %>
 
   <body>
-    <%- include('layout/_navbar.ejs', { navLink: '運送' }) %>
+    <%- include('layout/_navbar.ejs', { navLink: '付款' }) %>
 
     <section class="checkout mt-0 mt-md-45 mb-md-60">
       <div class="container">
@@ -14,48 +14,75 @@
               <div class="col-md-7">
                 <div class="row no-gutters align-items-baseline text-light bg-primary pt-30 px-40">
                   <div class="col">
-                    <h2>運送</h2>
+                    <h2>付款</h2>
                   </div>
                   <div class="col">
                     <div class="checkout-progress">
+                      <div class="checkout-progress-item finish"></div>
                       <div class="checkout-progress-item active"></div>
-                      <div class="checkout-progress-item"></div>
                       <div class="checkout-progress-item"></div>
                     </div>
                   </div>
                 </div>
                 <form class="my-n1">
                   <div class="form-row mx-0 text-light bg-primary py-30 px-40">
-                    <div class="form-group col-6">
-                      <label for="last-name" class="h5">姓氏</label>
-                      <input type="text" class="form-control bg-light" id="last-name" placeholder="王">
-                    </div>
-                    <div class="form-group col-6">
-                      <label for="first-name" class="h5">名字</label>
-                      <input type="text" class="form-control bg-light" id="first-name" placeholder="小名">
+                    <div class="form-group col-12">
+                      <label for="cc-number" class="h5">信用卡卡號</label>
+                      <div class="input-group">
+                        <input type="tel" class="form-control bg-light border-right-0" id="cc-number" placeholder="0912-345-678">
+                        <div class="input-group-append d-flex justify-content-center align-items-center bg-light">
+                          <i class="material-icons text-primary">credit_card</i>
+                        </div>
+                      </div>
                     </div>
                     <div class="form-group col-12">
-                      <label for="phone" class="h5">電話</label>
-                      <input type="tel" class="form-control bg-light" id="phone" placeholder="0912-345-678">
+                      <label for="cc-last-name" class="h5">持卡人姓名</label>
+                      <div class="form-row">
+                        <div class="col-6">
+                          <input type="text" class="form-control bg-light" id="cc-last-name" placeholder="王">
+                        </div>
+                        <div class="col-6">
+                          <input type="text" class="form-control bg-light" id="cc-first-name" placeholder="小名">
+                        </div>
+                      </div>
                     </div>
-                    <div class="form-group col-12 mb-0">
-                      <label for="address" class="h5">地址</label>
+                    <div class="form-group col-12">
+                      <label for="cc-exp-month" class="h5">有效期限</label>
                       <div class="form-row mb-8">
                         <div class="col-6">
-                          <select class="form-control bg-light" id="city">
-                            <option selected>高雄市</option>
+                          <select class="form-control bg-light" id="cc-exp-month">
+                            <option selected disabled>月</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
                           </select>
                         </div>
                         <div class="col-6">
-                          <select class="form-control bg-light" id="county">
-                            <option selected>新興區</option>
+                          <select class="form-control bg-light" id="cc-exp-year">
+                            <option selected disabled>年</option>
                           </select>
                         </div>
                       </div>
-                      <input type="text" class="form-control bg-light" id="address" placeholder="幸福路 520 號">
+                    </div>
+                    <div class="form-group col-12 mb-0">
+                      <label for="cc-csc" class="h5">背面末三碼</label>
+                      <div class="form-row">
+                        <div class="col-6">
+                          <input type="tel" class="form-control bg-light" id="cc-csc" placeholder="123">
+                        </div>
+                      </div>
                     </div>
                   </div>
-                  <a href="payment.html" class="btn btn-lg btn-lg-fix btn-block btn-warning text-primary">下一步</a>
+                  <a href="#" class="btn btn-lg btn-lg-fix btn-block btn-warning text-primary">下一步</a>
                 </form>
               </div>
               <div class="col-md-5 d-none d-md-block">
@@ -86,7 +113,8 @@
                         <div class="col-12 mb-16">
                           <div class="row">
                             <div class="col-6">
-                              <div class="bg-img-fluid w-100 h-100" style="background-image: url('https://bit.ly/2QvsT63');"></div>
+                              <div class="bg-img-fluid w-100 h-100"
+                                style="background-image: url('https://bit.ly/2QvsT63');"></div>
                             </div>
                             <div class="col-6">
                               <div class="d-flex flex-column justify-content-center py-16">
@@ -99,7 +127,8 @@
                         <div class="col-12 mb-16">
                           <div class="row">
                             <div class="col-6">
-                              <div class="bg-img-fluid w-100 h-100" style="background-image: url('https://bit.ly/2zBDAxX');"></div>
+                              <div class="bg-img-fluid w-100 h-100"
+                                style="background-image: url('https://bit.ly/2zBDAxX');"></div>
                             </div>
                             <div class="col-6">
                               <div class="d-flex flex-column justify-content-center py-16">
@@ -112,7 +141,8 @@
                         <div class="col-12">
                           <div class="row">
                             <div class="col-6">
-                              <div class="bg-img-fluid w-100 h-100" style="background-image: url('https://bit.ly/2zKOP7w');"></div>
+                              <div class="bg-img-fluid w-100 h-100"
+                                style="background-image: url('https://bit.ly/2zKOP7w');"></div>
                             </div>
                             <div class="col-6">
                               <div class="d-flex flex-column justify-content-center py-16">

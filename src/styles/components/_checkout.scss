@@ -25,6 +25,22 @@
     border: 1px solid $light;
     border-radius: 50%;
 
+    &.finish {
+      background-color: $light;
+      &::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        width: .75rem;
+        height: .375rem;
+        content: "";
+        border-bottom: 2px solid $primary;
+        border-left: 2px solid $primary;
+        transform: translate(3px, 4px) rotate(-45deg);
+      }
+    }
+
     &.active {
       &::after {
         position: absolute;
