@@ -1,7 +1,11 @@
 .word-column {
   writing-mode: vertical-rl;
 }
-
+.bg-img-fluid {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
 .swiper {
   overflow: hidden;
   overflow-x: scroll;

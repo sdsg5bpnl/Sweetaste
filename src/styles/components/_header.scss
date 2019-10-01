@@ -53,16 +53,6 @@
     background-position: center center;
     background-size: cover;
     transition: transform .4s;
-
-    &:nth-child(1) {
-      background-image: url("https://bit.ly/2R5tqwD");
-    }
-    &:nth-child(2) {
-      background-image: url("https://bit.ly/2Dwoxd7");
-    }
-    &:nth-child(3) {
-      background-image: url("https://bit.ly/2OUteif");
-    }
   }
 
   .header-menu > * {
