@@ -58,75 +58,8 @@
                   <a href="payment.html" class="btn btn-lg btn-lg-fix btn-block btn-warning text-primary">下一步</a>
                 </form>
               </div>
-              <div class="col-md-5 d-none d-md-block">
-                <div class="row text-secondary">
-                  <div class="col-12 mb-20">
-                    <h4 class="text-center bg-light py-16 mb-0">訂單摘要</h4>
-                    <div class="py-16 px-20 border border-light">
-                      <div class="row">
-                        <div class="col-12 d-flex justify-content-between mb-8">
-                          <span>小計</span>
-                          <span>NT$ 2,700</span>
-                        </div>
-                        <div class="col-12 d-flex justify-content-between mb-8">
-                          <span>運費</span>
-                          <span>NT$ 300</span>
-                        </div>
-                        <div class="col-12 d-flex justify-content-between mt-8">
-                          <span class="h5 mb-0">總計</span>
-                          <span class="h5 mb-0">NT$ 3,000</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-12">
-                    <h4 class="text-center bg-light py-16 mb-0">購物清單</h4>
-                    <div class="py-16 px-20 border border-light">
-                      <div class="row">
-                        <div class="col-12 mb-16">
-                          <div class="row">
-                            <div class="col-6">
-                              <div class="bg-img-fluid w-100 h-100" style="background-image: url('https://bit.ly/2QvsT63');"></div>
-                            </div>
-                            <div class="col-6">
-                              <div class="d-flex flex-column justify-content-center py-16">
-                                <span>焦糖馬卡龍（2）</span>
-                                <h5 class="mb-0">NT$ 900</h5>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-12 mb-16">
-                          <div class="row">
-                            <div class="col-6">
-                              <div class="bg-img-fluid w-100 h-100" style="background-image: url('https://bit.ly/2zBDAxX');"></div>
-                            </div>
-                            <div class="col-6">
-                              <div class="d-flex flex-column justify-content-center py-16">
-                                <span>焦糖馬卡龍（2）</span>
-                                <h5 class="mb-0">NT$ 900</h5>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-12">
-                          <div class="row">
-                            <div class="col-6">
-                              <div class="bg-img-fluid w-100 h-100" style="background-image: url('https://bit.ly/2zKOP7w');"></div>
-                            </div>
-                            <div class="col-6">
-                              <div class="d-flex flex-column justify-content-center py-16">
-                                <span>焦糖馬卡龍（2）</span>
-                                <h5 class="mb-0">NT$ 900</h5>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+
+              <%- include('layout/_checkout-summary.ejs') %>
             </div>
           </div>
         </div>
