@@ -16,6 +16,13 @@
       border-bottom: 1px solid $light;
     }
   }
+
+  .checkout-progress-dark {
+    &::after {
+      border-color: $primary;
+    }
+  }
+
   .checkout-progress-item {
     position: relative;
     z-index: 5;
@@ -38,6 +45,14 @@
         border-bottom: 2px solid $primary;
         border-left: 2px solid $primary;
         transform: translate(3px, 4px) rotate(-45deg);
+      }
+    }
+
+    &.finish-dark {
+      background-color: $primary;
+      border-color: $primary;
+      &::after {
+        border-color: $light;
       }
     }
 

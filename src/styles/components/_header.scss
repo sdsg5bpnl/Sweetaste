@@ -6,9 +6,16 @@
     background-repeat: no-repeat;
     background-position: right center;
     background-size: cover;
-
     @include media-breakpoint-up(md) {
       height: 31rem;
+    }
+  }
+  .header-banner-sm {
+    height: 32.375rem;
+    background-position: center top;
+    @include media-breakpoint-up(md) {
+      height: 28.75rem;
+      background-position: center center;
     }
   }
 
@@ -72,6 +79,19 @@
       &:hover {
         background-color: rgba($warning, .7);
       }
+    }
+  }
+
+  .header-status {
+    position: absolute;
+    top: 13rem;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+    @include media-breakpoint-up(md) {
+      top: 8rem;
+      width: 18.75rem;
+      transform: translateX(-50%);
     }
   }
 }

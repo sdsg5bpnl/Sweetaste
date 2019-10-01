@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+  <%- include('layout/_head.ejs', { pageTitle: '購物車｜Sweetaste' }) %>
+
+  <body>
+    <%- include('layout/_navbar.ejs', { navLink: '購物車' }) %>
+
+    <section class="header container p-0 p-md-10 mb-md-60">
+      <div class="header-banner header-banner-sm" style="background-image: url('https://bit.ly/2P7GhNd');">
+        <div class="header-status checkout">
+          <div class="checkout-progress checkout-progress-dark mx-55 mb-32">
+            <div class="checkout-progress-item finish finish-dark"></div>
+            <div class="checkout-progress-item finish finish-dark"></div>
+            <div class="checkout-progress-item finish finish-dark"></div>
+          </div>
+          <img src="static/lg-付款成功.svg" alt="付款成功" class="img-fluid mx-55 mb-md-50">
+          <a href="index.html" class="btn btn-lg btn-lg-fix btn-block btn-warning text-primary d-none d-md-block">繼續逛逛</a>
+        </div>
+      </div>
+      <a href="index.html" class="btn btn-lg btn-lg-fix btn-block btn-warning text-primary d-md-none">繼續逛逛</a>
+    </section>
+
+    <%- include('layout/_footer.ejs') %>
+
+    <%- include('layout/_scripts.ejs') %>
+  </body>
+
+</html>
