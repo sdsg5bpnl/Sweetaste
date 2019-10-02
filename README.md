@@ -17,7 +17,7 @@ https://sdsg5bpnl.github.io/Sweetaste/
 - 緣起活動：[【網頁排版PK戰】甜點電商](https://www.hexschool.com/2018/09/13/2018-09-13-hexschool-challenge/)
 - 設計稿：https://lihi.cc/LAfsC
 
-### npm 指令：
+### npm 指令
 
 - `npm run clean`：清除 dist 資料夾
 - `npm run serve`：進入開發模式，包含 Hot Reload 功能
