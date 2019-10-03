@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="zh-Hant-TW">
 
-  <%- include('layout/_head.ejs', { pageTitle: '甜點｜Sweetaste' }) %>
+  <%- include('views/_head.ejs', { pageTitle: '甜點｜Sweetaste' }) %>
 
   <body>
-    <%- include('layout/_navbar.ejs', { navLink: '甜點' }) %>
+    <%- include('views/_navbar.ejs', { navLink: '甜點' }) %>
 
     <section class="header container p-0 p-md-10 mb-30 mb-lg-60">
       <div class="header-banner" style="background-image: url('https://bit.ly/2Qodh3Z');">
-        <img src="static/lg-想吃甜點是不需要理由的.svg" alt="lg-想吃甜點是不需要理由的" class="header-slogan">
+        <img src="images/lg-想吃甜點是不需要理由的.svg" alt="lg-想吃甜點是不需要理由的" class="header-slogan">
       </div>
     </section>
 
@@ -174,9 +174,9 @@
       </div>
     </section>
 
-    <%- include('layout/_footer.ejs') %>
+    <%- include('views/_footer.ejs') %>
 
-    <%- include('layout/_scripts.ejs') %>
+    <%- include('views/_scripts.ejs') %>
   </body>
 
 </html>

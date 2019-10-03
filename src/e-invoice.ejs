@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="zh-Hant-TW">
 
-  <%- include('layout/_head.ejs', { pageTitle: '付款｜Sweetaste' }) %>
+  <%- include('views/_head.ejs', { pageTitle: '付款｜Sweetaste' }) %>
 
   <body>
-    <%- include('layout/_navbar.ejs', { navLink: '付款' }) %>
+    <%- include('views/_navbar.ejs', { navLink: '付款' }) %>
 
     <section class="checkout mt-0 mt-md-45 mb-md-60">
       <div class="container">
@@ -45,16 +45,16 @@
 
               </div>
 
-              <%- include('layout/_checkout-summary.ejs') %>
+              <%- include('views/_checkout-summary.ejs') %>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <%- include('layout/_footer.ejs') %>
+    <%- include('views/_footer.ejs') %>
 
-    <%- include('layout/_scripts.ejs') %>
+    <%- include('views/_scripts.ejs') %>
   </body>
 
 </html>

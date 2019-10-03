@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="zh-Hant-TW">
 
-  <%- include('layout/_head.ejs', { pageTitle: '登入｜Sweetaste' }) %>
+  <%- include('views/_head.ejs', { pageTitle: '登入｜Sweetaste' }) %>
 
   <body>
-    <%- include('layout/_navbar.ejs', { navLink: '登入' }) %>
+    <%- include('views/_navbar.ejs', { navLink: '登入' }) %>
 
     <section class="mt-0 mt-md-45 mb-md-60">
       <div class="container">
@@ -45,17 +45,17 @@
                 <div class="row no-gutters">
                   <div class="col-4 col-md-12">
                     <a href="#" class="btn btn-block btn-light btn-social bg-white mb-md-16 d-flex align-items-center justify-content-center">
-                      <img src="static/ic-facebook-logotype.svg" alt="facebook" class="ic-facebook">
+                      <img src="images/ic-facebook-logotype.svg" alt="facebook" class="ic-facebook">
                     </a>
                   </div>
                   <div class="col-4 col-md-12">
                     <a href="#" class="btn btn-block btn-light btn-social bg-white mb-md-16 d-flex align-items-center justify-content-center">
-                      <img src="static/ic-google.svg" alt="facebook" class="ic-google">
+                      <img src="images/ic-google.svg" alt="facebook" class="ic-google">
                     </a>
                   </div>
                   <div class="col-4 col-md-12">
                     <a href="#" class="btn btn-block btn-light btn-social bg-white d-flex align-items-center justify-content-center">
-                      <img src="static/ic-yahoo.svg" alt="facebook" class="ic-yahoo">
+                      <img src="images/ic-yahoo.svg" alt="facebook" class="ic-yahoo">
                     </a>
                   </div>
                 </div>
@@ -66,9 +66,9 @@
       </div>
     </section>
 
-    <%- include('layout/_footer.ejs') %>
+    <%- include('views/_footer.ejs') %>
 
-    <%- include('layout/_scripts.ejs') %>
+    <%- include('views/_scripts.ejs') %>
   </body>
 
 </html>
