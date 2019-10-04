@@ -7,11 +7,11 @@
     <%- include('views/_navbar.ejs', { navLink: '運送' }) %>
 
     <section class="checkout mt-0 mt-md-45 mb-md-60">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-10 px-0 px-md-10">
-            <div class="row">
-              <div class="col-md-7">
+      <div class="container px-0 px-md-10">
+        <div class="row no-gutters justify-content-center">
+          <div class="col-md-10">
+            <div class="row mx-0">
+              <div class="col-md-7 px-0 px-md-10">
                 <div class="row no-gutters align-items-baseline text-light bg-primary pt-30 px-40">
                   <div class="col">
                     <h2>運送</h2>
@@ -28,31 +28,31 @@
                   <div class="form-row mx-0 text-light bg-primary py-30 px-40">
                     <div class="form-group col-6">
                       <label for="last-name" class="h5">姓氏</label>
-                      <input type="text" class="form-control bg-light" id="last-name" placeholder="王">
+                      <input type="text" class="form-control bg-light border-0" id="last-name" placeholder="王">
                     </div>
                     <div class="form-group col-6">
                       <label for="first-name" class="h5">名字</label>
-                      <input type="text" class="form-control bg-light" id="first-name" placeholder="小名">
+                      <input type="text" class="form-control bg-light border-0" id="first-name" placeholder="小名">
                     </div>
                     <div class="form-group col-12">
                       <label for="phone" class="h5">電話</label>
-                      <input type="tel" class="form-control bg-light" id="phone" placeholder="0912-345-678">
+                      <input type="tel" class="form-control bg-light border-0" id="phone" placeholder="0912-345-678">
                     </div>
                     <div class="form-group col-12 mb-0">
                       <label for="address" class="h5">地址</label>
                       <div class="form-row mb-8">
                         <div class="col-6">
-                          <select class="form-control bg-light" id="city">
+                          <select class="form-control bg-light border-0" id="city">
                             <option selected>高雄市</option>
                           </select>
                         </div>
                         <div class="col-6">
-                          <select class="form-control bg-light" id="county">
+                          <select class="form-control bg-light border-0" id="county">
                             <option selected>新興區</option>
                           </select>
                         </div>
                       </div>
-                      <input type="text" class="form-control bg-light" id="address" placeholder="幸福路 520 號">
+                      <input type="text" class="form-control bg-light border-0" id="address" placeholder="幸福路 520 號">
                     </div>
                   </div>
                   <a href="payment.html" class="btn btn-lg btn-lg-fix btn-block btn-warning text-primary">下一步</a>

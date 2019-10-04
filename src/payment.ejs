@@ -7,11 +7,11 @@
     <%- include('views/_navbar.ejs', { navLink: '付款' }) %>
 
     <section class="checkout mt-0 mt-md-45 mb-md-60">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-10 px-0 px-md-10">
-            <div class="row">
-              <div class="col-md-7">
+      <div class="container px-0 px-md-10">
+        <div class="row no-gutters justify-content-center">
+          <div class="col-md-10">
+            <div class="row mx-0">
+              <div class="col-md-7 px-0 px-md-10">
                 <div class="row no-gutters align-items-baseline text-light bg-primary pt-30 px-40">
                   <div class="col">
                     <h2>付款</h2>
@@ -29,7 +29,7 @@
                     <div class="form-group col-12">
                       <label for="cc-number" class="h5">信用卡卡號</label>
                       <div class="input-group">
-                        <input type="tel" class="form-control bg-light border-right-0" id="cc-number"
+                        <input type="tel" class="form-control bg-light border-0" id="cc-number"
                           placeholder="0912-345-678">
                         <div class="input-group-append d-flex justify-content-center align-items-center bg-light">
                           <i class="material-icons text-primary">credit_card</i>
@@ -40,10 +40,10 @@
                       <label for="cc-last-name" class="h5">持卡人姓名</label>
                       <div class="form-row">
                         <div class="col-6">
-                          <input type="text" class="form-control bg-light" id="cc-last-name" placeholder="王">
+                          <input type="text" class="form-control bg-light border-0" id="cc-last-name" placeholder="王">
                         </div>
                         <div class="col-6">
-                          <input type="text" class="form-control bg-light" id="cc-first-name" placeholder="小名">
+                          <input type="text" class="form-control bg-light border-0" id="cc-first-name" placeholder="小名">
                         </div>
                       </div>
                     </div>
@@ -51,7 +51,7 @@
                       <label for="cc-exp-month" class="h5">有效期限</label>
                       <div class="form-row mb-8">
                         <div class="col-6">
-                          <select class="form-control bg-light" id="cc-exp-month">
+                          <select class="form-control bg-light border-0" id="cc-exp-month">
                             <option selected disabled>月</option>
                             <option value="1">1</option>
                             <option value="2">2</option>
@@ -68,7 +68,7 @@
                           </select>
                         </div>
                         <div class="col-6">
-                          <select class="form-control bg-light" id="cc-exp-year">
+                          <select class="form-control bg-light border-0" id="cc-exp-year">
                             <option selected disabled>年</option>
                           </select>
                         </div>
@@ -78,7 +78,7 @@
                       <label for="cc-csc" class="h5">背面末三碼</label>
                       <div class="form-row">
                         <div class="col-6">
-                          <input type="tel" class="form-control bg-light" id="cc-csc" placeholder="123">
+                          <input type="tel" class="form-control bg-light border-0" id="cc-csc" placeholder="123">
                         </div>
                       </div>
                     </div>

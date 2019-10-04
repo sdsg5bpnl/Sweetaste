@@ -7,11 +7,11 @@
     <%- include('views/_navbar.ejs', { navLink: '付款' }) %>
 
     <section class="checkout mt-0 mt-md-45 mb-md-60">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-10 px-0 px-md-10">
-            <div class="row">
-              <div class="col-md-7">
+      <div class="container px-0 px-md-10">
+        <div class="row no-gutters justify-content-center">
+          <div class="col-md-10">
+            <div class="row mx-0">
+              <div class="col-md-7 px-0 px-md-10">
                 <div class="row no-gutters align-items-baseline text-light bg-primary py-30 px-40">
                   <div class="col">
                     <h2>發票</h2>
@@ -40,21 +40,21 @@
                       </div>
                       <div class="form-row mb-8">
                         <div class="col-6">
-                          <select class="form-control bg-light" id="city">
+                          <select class="form-control bg-light border-0" id="city">
                             <option selected>高雄市</option>
                           </select>
                         </div>
                         <div class="col-6">
-                          <select class="form-control bg-light" id="county">
+                          <select class="form-control bg-light border-0" id="county">
                             <option selected>新興區</option>
                           </select>
                         </div>
                       </div>
-                      <input type="text" class="form-control bg-light" id="address" placeholder="幸福路 520 號">
+                      <input type="text" class="form-control bg-light border-0" id="address" placeholder="幸福路 520 號">
                     </div>
                     <div class="form-group col-12 mb-0">
                       <label for="tax-id-number" class="h5">統一編號（選填）</label>
-                      <input type="tel" class="form-control bg-light" id="tax-id-number" placeholder="12345678">
+                      <input type="tel" class="form-control bg-light border-0" id="tax-id-number" placeholder="12345678">
                     </div>
                   </div>
                   <a href="checkout-success.html" class="btn btn-lg btn-lg-fix btn-block btn-warning text-primary">確認結帳</a>

@@ -7,11 +7,11 @@
     <%- include('views/_navbar.ejs', { navLink: '付款' }) %>
 
     <section class="checkout mt-0 mt-md-45 mb-md-60">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-10 px-0 px-md-10">
-            <div class="row">
-              <div class="col-md-7">
+      <div class="container px-0 px-md-10">
+        <div class="row no-gutters justify-content-center">
+          <div class="col-md-10">
+            <div class="row mx-0">
+              <div class="col-md-7 px-0 px-md-10">
                 <div class="row no-gutters align-items-baseline text-light bg-primary py-30 px-40">
                   <div class="col">
                     <h2>發票</h2>
@@ -32,12 +32,12 @@
                   <div class="form-row mx-0 text-light bg-primary py-30 px-40">
                     <div class="form-group col-12">
                       <label for="email" class="h5">電子郵件信箱</label>
-                      <input type="email" class="form-control bg-light border-right-0" id="email"
+                      <input type="email" class="form-control bg-light border-0" id="email"
                         placeholder="example@email.com">
                     </div>
                     <div class="form-group col-12 mb-0">
                       <label for="tax-id-number" class="h5">統一編號（選填）</label>
-                      <input type="tel" class="form-control bg-light" id="tax-id-number" placeholder="12345678">
+                      <input type="tel" class="form-control bg-light border-0" id="tax-id-number" placeholder="12345678">
                     </div>
                   </div>
                   <a href="checkout-success.html" class="btn btn-lg btn-lg-fix btn-block btn-warning text-primary">確認結帳</a>
